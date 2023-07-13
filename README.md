@@ -18,7 +18,7 @@ conda install -c conda-forge ripser==0.6.0 matplotlib tqdm
 `diagram.py` reads in CSV data at location `infn` and outputs the persistence diagram at location `outroot.png`. Details about additional arguments are provided in the script.
 
 ```
-poetry run python diagram.py infn outroot n_cells [T_max] [n_points] [max_dim]
+python diagram.py infn outroot n_cells [T_max] [n_points] [max_dim]
 ```
 
 ### `coords.py`
@@ -26,7 +26,7 @@ poetry run python diagram.py infn outroot n_cells [T_max] [n_points] [max_dim]
 `coords.py` reads in CSV data at location `infn`, finds the number of persistent 1-cocycles, and calculates circular coordinates for them. These coordinates are saved at location `outroot_coords.csv`. The number of persistent 1-cocycles as identified by the largest-gap heuristic is saved at location `outroot_gaps.csv`. Details about additional arguments are provided in the script.
 
 ```
-poetry run python coords.py infn outroot n_cells [T_max] [n_points] [n_trials] [n_threads]
+python coords.py infn outroot n_cells [T_max] [n_points] [n_trials] [n_threads]
 ```
 
 ### `sweep-cells.py`
@@ -34,7 +34,7 @@ poetry run python coords.py infn outroot n_cells [T_max] [n_points] [n_trials] [
 `sweep-cells.py` reads in CSV data at location `infn`, calculates the number of persistent 1-cocycles for different numbers of subsampled cells, and outputs the success rates of detecting a desired topology. The success rates are saved at location `outroot_success.csv`. The numbers of subsampled cells as specified in the command line arguments are saved at location `outroot_n.csv`. Details about additional arguments are provided in the script.
 
 ```
-poetry run python infn outroot target [T_max] [n_points] [n_trials] [n_threads] -n n_cells1 [-n n_cells2 ...]
+python infn outroot target [T_max] [n_points] [n_trials] [n_threads] -n n_cells1 [-n n_cells2 ...]
 ```
 
 ## Included code
