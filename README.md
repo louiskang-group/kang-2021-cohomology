@@ -34,7 +34,7 @@ python coords.py infn outroot n_cells [T_max] [n_points] [n_trials] [n_threads]
 `sweep-cells.py` reads in CSV data at location `infn`, calculates the number of persistent 1-cocycles for different numbers of subsampled cells, and outputs the success rates of detecting a desired topology. The success rates are saved at location `outroot_success.csv`. The numbers of subsampled cells as specified in the command line arguments are saved at location `outroot_n.csv`. Details about additional arguments are provided in the script.
 
 ```
-python infn outroot target [T_max] [n_points] [n_trials] [n_threads] -n n_cells1 [-n n_cells2 ...]
+python sweep-cells.py infn outroot target [T_max] [n_points] [n_trials] [n_threads] -n n_cells1 [-n n_cells2 ...]
 ```
 
 ## Included code
